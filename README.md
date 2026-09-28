@@ -395,8 +395,3 @@ Pour faire évoluer **Family-App** et ajouter de nouvelles fonctionnalités (par
 #### 🔴 Problème de rendu des particules ou des confettis sur mobile
 > **Solution :** Le composant `useWindowSize` de `react-use` récalcule dynamiquement la taille du viewport. Assurez-vous que l'élément parent possède `overflow-hidden` sur le container principal pour éviter tout défilement horizontal parasite.
 
----
-
-<p center align="center">
-  <b>Family-App</b> — Fait avec ❤️ pour la communauté.
-</p>
