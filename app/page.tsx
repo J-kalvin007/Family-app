@@ -101,7 +101,7 @@
 
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { X } from 'lucide-react';
 import { toast, ToastContainer } from "react-toastify";
 import { ClipLoader } from "react-spinners";
@@ -145,8 +145,8 @@ export default function Home() {
     setIsloading(false);
   }
 
-  const particlesInit = async (main: any) => {
-    await loadFull(main);
+  const particlesInit: NonNullable<React.ComponentProps<typeof Particles>['init']> = async (main) => {
+    await loadFull(main as unknown as Parameters<typeof loadFull>[0]);
   };
 
   return (

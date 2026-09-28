@@ -31,6 +31,7 @@ export async function POST(req: Request) {
       { status: 201 }
     );
   } catch (error) {
+    console.error("Erreur API Mailchimp :", error);
     return NextResponse.json(
       { error: "Cette adresse e-mail n'est pas valide ou est déjà utilisée 🚫" },
       { status: 500 }
